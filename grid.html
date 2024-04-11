@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+
+    
+    <style>
+        .contenedor{
+            display: grid; /* Indica que vamos a trabajar con grid */ 
+            gap: 10px; /* Espacios que separan las celdas */ 
+            grid-template-columns: 1fr 4fr ; /* Cantidad y tamaño de las columnas del grid */
+            grid-template-rows: 1fr 2fr 2fr 1fr; /* Cantidad y tamaño de las filas del grid */
+            grid-template-areas: /* Maquetación del grid */
+            'header header'
+            'izq    main'
+            'publi  main'
+            'footer footer'
+            ;
+
+            min-height: 100vh; /* Tamaño minimo del Contenedor */
+        }
+
+        header{
+            background-color: aqua;
+            grid-area: header; /* esto es para que el Contenedor pueda identificar el area que se desea maquetar */
+        }
+
+        main{
+            background-color: blueviolet;
+            grid-area: main;
+        }
+
+        .izq{
+            background-color: beige;
+            grid-area: izq;
+        }
+
+        .publi{
+            background-color: red;
+            grid-area: publi;
+        }
+
+        footer{
+            background-color: coral;
+            grid-area: footer;
+        }
+
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <header>header</header>
+        <main>main</main>
+        <div class="izq">izq</div>
+        <div class="publi">publi</div>
+        <footer>footer</footer>
+
+    </div>
+
+
+
+</body>
+
+</html>

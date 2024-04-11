@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        :root{ /* modifica el valor de la Raiz (en este caso el valor del rem del texto base)
+            El EM sigue al contenedor. El REM sigue a la raiz.
+            */
+             font-size: 32px; 
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <h1 style="font-size: 64px;"> CONTACTOS</h1>
+    <a href="index.html">Volver al index</a>
+
+    <h2 style="color: brown">FORMULARIOS</h2>
+
+    <form action="https://formspree.io/f/xyyrdjgv" method="post">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <!-- <label> Password: </label>
+            <input type="password" name="password" placeholder="Ingrese aqui su password">
+            <br> -->
+
+            <label class="texto"> Nombre: </label>
+            <input type="text" name="nombre" placeholder="Ingrese aqui su nombre" required>
+            <br>
+
+            <label class="texto"> Apellido: </label>
+            <input type="text" name="apellido" placeholder="Ingrese aqui su apellido">
+            <br>
+
+            <label class="texto"> Dirección: </label>
+            <input type="text" name="direccion" placeholder="Ingrese aqui su direccion">
+            <br>
+
+            <label id="mail"> Email: </label>
+            <input type="email" name="email" placeholder="Ingrese aqui su mail" required>
+            <br>
+
+            <label> Telefono: </label>
+            <input type="number" name="telefono" placeholder="Ingrese aqui su Telefono">
+            <br>
+
+            <label> Genero: </label>
+            <br>
+            <label> Masculino: </label> <input type="radio" name="genero" value="masculino">
+            <label> Femenino: </label> <input type="radio" name="genero" value="femenino">
+            <br>
+
+            <label> Fecha: </label>
+            <input type="date" name="fecha">
+            <br>
+
+            <label> Educación </label>
+            <br>
+            <label> Primaria: </label> <input type="checkbox" name="educacion" value="primaria">
+            <label> Secundaria: </label> <input type="checkbox" name="educacion" value="secundaria">
+            <label> Terciaria: </label> <input type="checkbox" name="educacion" value="terciaria">
+            <label> Universitaria: </label> <input type="checkbox" name="educacion" value="universitaria">
+            <br>
+
+            <label> Color: </label>
+            <input type="color" name="color">
+            <br>
+
+            <label class="texto"> Comentario: </label>
+            <textarea type="text" name="comentario">Escriba aqui </textarea>
+            <br>
+
+        </fieldset>
+
+        <input type="submit">
+        <input type="reset">
+
+    </form>
+ 
+    <div style="width: 50vw;"> <!-- Con esto hago que el div tenga como ancho el 50% del tamaño de la pantalla -->
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, illo! Fugiat quibusdam recusandae, suscipit sunt optio voluptates porro, tempora similique minima tenetur error eius vel corporis deleniti excepturi vero debitis.
+
+    </div>
+
+</body>
+
+</html>
